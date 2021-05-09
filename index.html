@@ -329,19 +329,21 @@
 	
 	<!-- TEXT ROTATOR SETTINGS -->
     <script type="text/javascript">
-    $(".rotate").textrotator({
-      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 2000 // How many milliseconds until the next word show.
-    });
-	$('#collection').columnsToJs({
-		count: 3,
-		gap: 20,
-		fixed: true,
-		check: 10,
-		interval: false,
-		debug: false
-	});
+    $(window).load(function(){
+		$(".rotate").textrotator({
+		  animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+		  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+		  speed: 2000 // How many milliseconds until the next word show.
+		});
+		$('#collection').columnsToJs({
+			count: 3,
+			gap: 20,
+			fixed: true,
+			check: 10,
+			interval: false,
+			debug: false
+		});
+	})
     </script>
 	
     </body>
